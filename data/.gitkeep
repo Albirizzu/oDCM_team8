@@ -1,0 +1,7 @@
+Example:
+
+data\file1.csv <-- your raw data files
+data\file2.csv
+data\file3.csv
+
+In this folder we will put our data files.
