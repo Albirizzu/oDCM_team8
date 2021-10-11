@@ -2,7 +2,7 @@
 ### 1.1 Motivation
 *Motivation for data context*
 
-The aim of this paper is to collect data regarding theatrical movies, to answer the following reserach question: *What is the impact of Covid-19 on the film industry?*
+The aim of this paper is to collect data regarding theatrical movies, to answer the following research question: *What is the impact of Covid-19 on the film industry?*
 Therefore, a dataset containing data of movies before, during and after the pandemic will be created (2015 until 2020). 
 This will be valuable to compare different kinds of variables relating to the film industry during this time period and to get some new insights on what kind of impact Covid-19 
 had, e.g. were there changes in revenues?  
@@ -35,7 +35,7 @@ While this research looks for the global impact of Covid-19 on the movie industr
 
 ## **Composition**
 
-The instances that comprise the dataset represent the titles of the films and the corresponding revenues that the film made in the cinemas. Furthermore will the data provide in IMDB ratings if the rating is available to the corresponding film. 
+The instances that comprise the dataset represent the titles of the films and the corresponding revenues that the film made in the cinemas. Furthermore, the data will be provided in IMDB ratings, if the rating is available to the corresponding film. 
 
 *Length:* an amount of three instances.
 
