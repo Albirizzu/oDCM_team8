@@ -33,9 +33,15 @@ While this research looks for the global impact of Covid-19 on the movie industr
 
 
 
-## **Composition**
+### 1.2 Composition
+*Entities, linkages, timeframe and algorithmic biases*
+The instances that comprise the dataset represent the titles of movies and the corresponding revenues that the movie made in the cinemas. For every movie the dataset contain a related revenue, which will be an indicator on how the revenues of movies for a specific year were. Furthermore, the data will be provided in IMDB ratings if the rating is available to the corresponding movie. In total the dataset has three instances, mentioned above, all three are considered as features. The data of each instance represents a measurable piece of data, which can be seen as a variable. The revenues and ratings are linked to a specific movie title, where movie titles can be linked to the year of release. This makes the data comparable over the years. All the available data has been scraped, resulting in a dataset of 200 movies for each year with corresponding revenues and ratings. The dataset will compare movies released from 2015 until 2021, to get an insight on the impact of Covid-19 on the film industry. 
 
-The instances that comprise the dataset represent the titles of the films and the corresponding revenues that the film made in the cinemas. Furthermore, the data will be provided in IMDB ratings, if the rating is available to the corresponding film. 
+*Sampling, construct measurement and data structure *
+
+
+
+
 
 *Length:* an amount of three instances.
 
