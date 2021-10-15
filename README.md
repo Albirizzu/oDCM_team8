@@ -102,7 +102,7 @@ Finally, besides the total market revenue the dataset also data on the domestic 
 **Is there anything about the composition of the da-taset or the way it was collected and prepro-cessed/cleaned/labeled that might impact future uses? For example, is there anything that a future user might need to know to avoid uses that could result in unfair treat-ment of individuals or groups (e.g., stereotyping, quality of service issues) or other undesirable harms (e.g., finan-cial harms, legal risks) If so, please provide a description. Is there anything a future user could do to mitigate these undesirable harms?**
 
 The composition of the data set is now based on the top 50 movies based on their revenue. So this has to be kept in mind for the future, to keep the composi-tion based on the top 50 based and doesn’t change it to the top 100 or top 200. 
-Also the possibilities of unforeseen errors in the initial dataset can have their effect on future users. As these errors might be included it will lead to un-valid con-clussions. 
+Also the possibilities of unforeseen errors in the initial dataset by data that has been updated over the time can have their effect on future users. As these errors might be included whenever the data has been up-dated it will lead to un-valid conclusions. 
 
 **Are there tasks for which the dataset should not be used? If so, please provide a description**
 
