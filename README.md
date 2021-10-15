@@ -1,9 +1,11 @@
 ## 1. Documentation
 ### 1.1 Motivation
-*Motivation for data context*
+
+**For what purpose was the dataset created? Was there a specific task in mind? Was there a specific gap that need-ed to be filled? Please provide a description. **
 
 The aim of this paper is to collect data regarding theatrical movies, to answer the following research question: *What is the impact of Covid-19 on the film industry?*
 Therefore, a dataset containing data of movies before, during and after the pandemic will be created (2015 until 2020). 
+
 This will be valuable to compare different kinds of variables relating to the film industry during this time period and to get some new insights on what kind of impact Covid-19 
 had, e.g. were there changes in revenues?  
 As other datasets only have data about one specific year, this dataset has been merged to one combined dataset containing data of multiple years. 
@@ -80,3 +82,35 @@ For the collection we used Jupyter Notebook running on Python.
 
 **Who were involved in the data collection process?**
 The data collection was done by four students from Tilburg University for the class [Online Data Collection & Management](https://odcm.hannesdatta.com/)
+
+
+## 5.		Uses
+
+**Has the dataset been used for any tasks already? If so, please provide a description.**
+
+The dataset we created based on scraping data from the box office mojo and Imdb websites  has not been used for any tasks so far. The idea is to look for the impact of Covid-19 on the movie industry. In which we want to compare the revenues of movies across years. This can be done by calculating the average revenue per year, so that we can compare year by year. Or the dataset might be specified into more de-tail, where we only compare the revenues of the top 5 movies across the years. 
+
+**Is there a repository that links to any or all papers or systems that use the dataset? If so, please provide a link or other access point**
+
+We used a repository on Github : https://github.com/Albirizzu/oDCM_team8.git
+*What (other) tasks could the dataset be used for?*
+The dataset now mainly focusses on the revenues produced per movie. This revenues will be compared over a couple of years to look for the impact of Covid-19. 
+
+However, the task can be extended to analyze the growth curve of revenues made in the movie indus-try. Whether this effect is exponential or linear over the last couple of years. 
+
+Also, an analysis on the effect of review ratings on the revenues can be done. A linear regression based on these two variables can be done to search for a correlation. 
+
+Finally, besides the total market revenue the dataset also data on the domestic theatrical market revenue ( USA). Based on this data we could compare how well the USA did compared to the world in generating revenue for a movie. 
+
+**Is there anything about the composition of the da-taset or the way it was collected and prepro-cessed/cleaned/labeled that might impact future uses? For example, is there anything that a future user might need to know to avoid uses that could result in unfair treat-ment of individuals or groups (e.g., stereotyping, quality of service issues) or other undesirable harms (e.g., finan-cial harms, legal risks) If so, please provide a description. Is there anything a future user could do to mitigate these undesirable harms?**
+
+The composition of the data set is now based on the top 50 movies based on their revenue. So this has to be kept in mind for the future, to keep the composi-tion based on the top 50 based and doesn’t change it to the top 100 or top 200. 
+Also the possibilities of unforeseen errors in the initial dataset can have their effect on future users. As these errors might be included it will lead to un-valid con-clussions. 
+
+**Are there tasks for which the dataset should not be used? If so, please provide a description**
+
+There are no tasks for which the dataset should not be used based on any legal or ethical concerns. 
+
+
+
+
