@@ -46,7 +46,9 @@ No, the data set is limited to the 50 films with the most revenue per year. This
 
 **What data does each instance consist of?**
 
-Review: number from 1 to 10.
+Review: ranking from 1 to 10.
+Revenue: Number of dollars.
+Film title: Character
 
 
 
