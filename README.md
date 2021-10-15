@@ -35,7 +35,22 @@ While this research looks for the global impact of Covid-19 on the movie industr
 
 ### 1.2 Composition
 *Entities, linkages, timeframe and algorithmic biases*
-The instances that comprise the dataset represent the titles of movies and the corresponding revenues that the movie made in the cinemas. For every movie the dataset contain a related revenue, which will be an indicator on how the revenues of movies for a specific year were. Furthermore, the data will be provided in IMDB ratings if the rating is available to the corresponding movie. In total the dataset has three instances, mentioned above, all three are considered as features. The data of each instance represents a measurable piece of data, which can be seen as a variable. The revenues and ratings are linked to a specific movie title, where movie titles can be linked to the year of release. This makes the data comparable over the years. All the available data has been scraped, resulting in a dataset of 200 movies for each year with corresponding revenues and ratings. The dataset will compare movies released from 2015 until 2021, to get an insight on the impact of Covid-19 on the film industry. 
+
+**What do the instances that comprise the dataset represent?**
+
+The instances that comprise the dataset represent film titles, corresponding revenues and the IMDB review of the film.
+
+**Does the dataset contain all possible instances or is it a sample of instances from a larger set?**
+
+No, the data set is limited to the 50 films with the most revenue per year. This means that for the year 2015 until the year 2021, films will be scraped based on the amount of revenue. The number of 50 is based on the tradeoff between having enough data to do analyses on, while keeping the amount of data being scraped low enough so that the scraping will not lead to errors.
+
+**What data does each instance consist of?**
+
+Review: number from 1 to 10.
+
+
+
+For every movie the dataset contain a related revenue, which will be an indicator on how the revenues of movies for a specific year were. Furthermore, the data will be provided in IMDB ratings if the rating is available to the corresponding movie. In total the dataset has three instances, mentioned above, all three are considered as features. The data of each instance represents a measurable piece of data, which can be seen as a variable. The revenues and ratings are linked to a specific movie title, where movie titles can be linked to the year of release. This makes the data comparable over the years. All the available data has been scraped, resulting in a dataset of 200 movies for each year with corresponding revenues and ratings. The dataset will compare movies released from 2015 until 2021, to get an insight on the impact of Covid-19 on the film industry. 
 
 *Sampling, construct measurement and data structure *
 
