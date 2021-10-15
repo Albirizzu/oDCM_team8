@@ -73,9 +73,11 @@ The dataset relies on the [IMDB](https://www.imdb.com/?ref_=helpms_helphdr_cons)
 ### 1.3 **Collection process**
 
 **How was the data associated with each instance acquired?**
+
 The film names and the revenues are acquired directly via [Box Office Mojo Worldwide page](https://www.boxofficemojo.com/year/world/?ref_=bo_nb_hm_tab). The ratings are provided via [IMDB](https://www.imdb.com/). Also the ratings were directly observable via webscraping. 
 
 **What mechanisms were used to collect the data?**
+
 For the collection we used Jupyter Notebook running on Python. 
 
 **If the dataset is a sample from a larger set, what was the sampling strategy?**
@@ -83,6 +85,7 @@ For the collection we used Jupyter Notebook running on Python.
 The dataset is a sample from a large set. First of all, we decide to scrape only the data from the 2015 to the present to see how covid impacts on gross revenues and merging this data with rating on IMDb website. Then we decide to take only the best 50 films for gross revenues from boxofficemojo's website. Beyond that, the sample is arbitrary.
 
 **Who were involved in the data collection process?**
+
 The data collection was done by four students from Tilburg University for the class [Online Data Collection & Management](https://odcm.hannesdatta.com/). Since it is a university project, no compensation was foreseen.
 
 **Over what timeframe was the data collected? Does this timeframe match the creation timeframe of the data associated with the instances? If not, please describe the time- frame in which the data associated with the instances was created.**
