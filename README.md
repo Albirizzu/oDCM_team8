@@ -70,7 +70,7 @@ The dataset relies on the [IMDB](https://www.imdb.com/?ref_=helpms_helphdr_cons)
 
 
 
-## **Collection process**
+### 1.3 **Collection process**
 
 **How was the data associated with each instance acquired?**
 The film names and the revenues are acquired directly via [Box Office Mojo Worldwide page](https://www.boxofficemojo.com/year/world/?ref_=bo_nb_hm_tab). The ratings are provided via [IMDB](https://www.imdb.com/). Also the ratings were directly observable via webscraping. 
@@ -78,8 +78,22 @@ The film names and the revenues are acquired directly via [Box Office Mojo World
 **What mechanisms were used to collect the data?**
 For the collection we used Jupyter Notebook running on Python. 
 
+**If the dataset is a sample from a larger set, what was the sampling strategy?**
+
+The dataset is a sample from a large set. First of all, we decide to scrape only the data from the 2015 to the present to see how covid impacts on gross revenues and merging this data with rating on IMDb website. Then we decide to take only the best 50 films for gross revenues from boxofficemojo's website. Beyond that, the sample is arbitrary.
+
 **Who were involved in the data collection process?**
-The data collection was done by four students from Tilburg University for the class [Online Data Collection & Management](https://odcm.hannesdatta.com/)
+The data collection was done by four students from Tilburg University for the class [Online Data Collection & Management](https://odcm.hannesdatta.com/). Since it is a university project, no compensation was foreseen.
+
+**Over what timeframe was the data collected? Does this timeframe match the creation timeframe of the data associated with the instances? If not, please describe the time- frame in which the data associated with the instances was created.**
+
+The data was collected in a time frame that does not correspond to the time frame in which the data associated with the instances was created. We collected data for the years 2015 to 2021 and therefore most of the data was already on the website. On the other hand, some data are still updated daily, so they may still change over time (especially for those referring to the current year and 2020).
+
+**Were any ethical review processes conducted? If so, please provide a description of these review processes, including the outcomes, as well as a link or other access point to any supporting documentation.**
+
+No ethical review processes have been conducted.
+
+
 
 ## 1.5.		Uses
 
@@ -102,7 +116,7 @@ Finally, besides the total market revenue the dataset also data on the domestic 
 **Is there anything about the composition of the da-taset or the way it was collected and prepro-cessed/cleaned/labeled that might impact future uses? For example, is there anything that a future user might need to know to avoid uses that could result in unfair treat-ment of individuals or groups (e.g., stereotyping, quality of service issues) or other undesirable harms (e.g., finan-cial harms, legal risks) If so, please provide a description. Is there anything a future user could do to mitigate these undesirable harms?**
 
 The composition of the data set is now based on the top 50 movies based on their revenue. So this has to be kept in mind for the future, to keep the composi-tion based on the top 50 based and doesn’t change it to the top 100 or top 200. 
-Also the possibilities of unforeseen errors in the initial dataset by data that has been updated over the time can have their effect on future users. As these errors might be included whenever the data has been up-dated it will lead to un-valid conclusions. 
+Also the possibilities of unforeseen errors in the initial dataset can have their effect on future users. As these errors might be included it will lead to un-valid con-clussions. 
 
 **Are there tasks for which the dataset should not be used? If so, please provide a description**
 
