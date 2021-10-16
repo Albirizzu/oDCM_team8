@@ -37,7 +37,7 @@ To ensure the quality of our data, we decided to use a webscraper instead. An ad
 
 **What do the instances that comprise the dataset represent?**
 
-The dataset comprises of the following instances scraped from Box Office Mojo: movie title, year of release, corresponding revenues made in- and outside the USA, and worldwide. Revenues inside the USA and revenues outside the USA will also be given in percentages of the total revenues. Additionally, movie titles and ratings are scraped from IMDb. The Box Office Mojo and IMDb data are merged together based on movie titles. 
+The dataset comprises of the following instances scraped from Box Office Mojo: movie title, year of release, corresponding revenues made in- and outside the USA, and worldwide. Revenues inside the USA and revenues outside the USA will also be given in percentages of the total revenues. Additionally, movie titles and ratings are scraped from IMDb. We scrape the data from both Box Office Mojo and IMDb for movies released between 2015 and 2021. The Box Office Mojo and IMDb data are merged together based on movie titles. 
 
 **Does the dataset contain all possible instances or is it a sample of instances from a larger set?**
 
