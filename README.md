@@ -30,13 +30,13 @@ makes the data useless for this research. For this research looks for the global
 
 <p> Therefore, data will be scraped from https://www.boxofficemojo.com. </p> 
 
-Concerning the IMDb data, there are several API's available. However, we decided to use a webscraper instead, as the COVID-19 pandemic is still ongoing, it is valuable for our data to be up to date.  
+Concerning the IMDb data, there are several IMDb API's available. However, we decided to use a webscraper instead, as the COVID-19 pandemic is still ongoing, it is valuable for our data to be up to date.  
 
 ### 1.2 Composition
 
 **What do the instances that comprise the dataset represent?**
 
-The instances that comprise the dataset represent film titles, IMDB ranking, corresponding revenues made in- and outside the USA and worldwide. Revenues inside the USA and revenues outside the USA will also be given in percentages of the total revenues. 
+The instances that comprise the dataset represent film titles, year of release, IMDB ranking, corresponding revenues made in- and outside the USA and worldwide. Revenues inside the USA and revenues outside the USA will also be given in percentages of the total revenues. 
 
 **Does the dataset contain all possible instances or is it a sample of instances from a larger set?**
 
@@ -44,13 +44,15 @@ No, the dataset is limited to the 50 films with the most revenue per year. This 
 
 **What data does each instance consist of?**
 <ol>
-<li>"Ranking": review number from 1 to 10
+<li>"Ranking": ranking of movie in year of release based on worldwide boxoffice revenue
 <li>"Movie": name of the film
-<li>"Worldwide": amount of worldwide revenue
-<li>"Domestic": amount of revenues made in the USA
+<li>"Worldwide": amount of worldwide revenue given in US$
+<li>"Domestic": amount of revenues made in the USA given in US$
 <li>"%-Domestic": percentage of revenues made in the USA 
-<li>"Foreign": amount of revenues made outside the USA
+<li>"Foreign": amount of revenues made outside the USA given in US$
 <li>"%-Foreign": percentage of revenues made outside the USA
+<li>"Rating": IMDb user rating on a scale of 1 to 10  
+<li>"Year": release year of the movie
 </ol>
 
 **Is any information missing from individual instances?**
@@ -60,7 +62,7 @@ Yes, ..............
 **Are there any errors, sources of noise, or redundancies in the
 dataset?**
 
-There's a possibility that there could be duplicates in the dataset. The data on the websites where the data is scraped gets updated daily, and it might occur that a film on one website gets a different (exact) name as the same film on another website. 
+As Box Office Mojo does not provide any movie ID's the data from Box Office Mojo is matched with data scraped from IMDb based on movie titles. In contrast to ID-tags, movie titles are not unique. Therefore there is a possibility that movies are matched with the wrong rating. 
 
 **Is the dataset self-contained, or does it link to or otherwise rely on
 external resources?**
