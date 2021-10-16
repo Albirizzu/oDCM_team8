@@ -30,7 +30,8 @@ makes the data useless for this research. For this research looks for the global
 
 <p> Therefore, data will be scraped from https://www.boxofficemojo.com. </p> 
 
-Concerning the IMDb data, there are several IMDb API's available. However, we decided to use a webscraper instead, as the COVID-19 pandemic is still ongoing, it is valuable for our data to be up to date.  
+Concerning the IMDb data, there are several IMDb datasets available on https://www.imdb.com/interfaces/. The dataset containing information on ratings and votes uses unique IMDb id's to link movies to their corresponding IMDb user rating. As these IMDb id's are not available on Boxoffice Mojo we would not be able to merge the two dataframes together. We considered merging a dataset containing movie id's and movie titles with the dataset containing movie ratings. Eventually we decided against this as we feared in a dataset of this size there would be movies with the exact same title, resulting into movies being assigned the wrong rating.
+To ensure the quality of our data, we decided to use a webscraper instead. An additional advantage of this is that as the COVID-19 pandemic is still ongoing, it is valuable for our data to be up to date.  
 
 ### 1.2 Composition
 
