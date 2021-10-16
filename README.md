@@ -1,6 +1,6 @@
 ## 1. Documentation
 ### 1.1 Motivation
-*Motivation for data context*
+**Motivation for data context**
 
 The movie industry has taken a big hit due to the COVID-19 pandemic. During 2020 and 2021, movie theaters and cinemas have had to deal with various restrictions, such as a limited number of visitors, mandatory COVID-vaccination checks and closing down entirely.
 The aim of this repository is to collect data regarding cinematic movies, to answer the following research question: *What is the impact of Covid-19 on boxoffice revenue?*
@@ -8,7 +8,7 @@ We will create a dataframe containing revenue data of movies before, during and 
 This will allow us to compare boxoffice revenues of the film industry during this time period and to get some new insights on the of impact Covid-19. There are several boxoffice revenue datasets available online (on e.g. Kaggle), however they are not up-to-date and focus on US revenue only. We believe our dataset will be of added value to the research community as there are no other datasets available focussing on this specific time period in a worldwide context. 
 As a result of movie theaters closing down, many blockbusters decided to postpone their release. This might have led to a decrease in quality of the movies released during the pandamic. We will add IMDb ratings to the dataset to allow the research to compensate for movie quality. 
 
-*Motivation for choice website/API*
+**Motivation for choice website/API**
 
 The following three websites have been assessed containing relevant boxoffice data:
 <ol>
