@@ -41,7 +41,8 @@ The dataset comprises of the following instances scraped from Box Office Mojo: m
 
 **Does the dataset contain all possible instances or is it a sample of instances from a larger set?**
 
-No, the dataset is limited to the 50 films with the most revenue per year. This means that for the year 2015 until the year 2021, films will be scraped based on the amount of revenue. The number of 50 is based on the tradeoff between having enough data to do analyses on, while keeping the amount of data being scraped low enough so that the scraping will not lead to errors.
+Our dataset is based on the worldwide Box Office ranking from Box Office Mojo. This ranking does not contain all movies released each year but merely the top 200. 
+This means that for the year 2015 until the year 2021, only movies within the top 200 best ranking worldwide boxoffice revenue will be scraped.
 
 **What data does each instance consist of?**
 <ol>
@@ -58,7 +59,7 @@ No, the dataset is limited to the 50 films with the most revenue per year. This 
 
 **Is any information missing from individual instances?**
 
-Yes, ..............
+We were not able to scrape IMDb ratings for all movies in the Box Office Mojo ranking. Therefore some movies will display an N/A in the rating column.
 
 **Are there any errors, sources of noise, or redundancies in the
 dataset?**
