@@ -6,7 +6,7 @@ The movie industry has taken a big hit due to the COVID-19 pandemic. During 2020
 The aim of this repository is to collect data regarding cinematic movies, to answer the following research question: *What is the impact of Covid-19 on boxoffice revenue?*
 We will create a dataframe containing revenue data of movies before, during and after the pandemic (2015 until 2021) using Box Office Mojo. 
 This will allow us to compare boxoffice revenues of the film industry during this time period and to get some new insights on the of impact Covid-19. There are several boxoffice revenue datasets available online (on e.g. Kaggle), however they are not up-to-date and focus on US revenue only. We believe our dataset will be of added value to the research community as there are no other datasets available focussing on this specific time period in a worldwide context. 
-As a result of movie theaters closing down, many blockbusters decided to postpone their release. This might have led to a decrease in quality of the movies released during the pandamic. We will add IMDb ratings to the dataset to allow to compensate for movie quality. 
+As a result of movie theaters closing down, many blockbusters decided to postpone their release. This might have led to a decrease in quality of the movies released during the pandamic. We will add IMDb ratings to the dataset to allow the research to compensate for movie quality. 
 
 *Motivation for choice website/API*
 
@@ -16,9 +16,9 @@ The following three websites have been assessed containing relevant boxoffice da
 <li>Second website: https://www.rottentomatoes.com/top</li>
 <li>Third website: https://www.the-numbers.com/</li>
 </ol>
-<p> All three websites show available data about movies, which is the first step to make the websites comparable to each other.  
-Furthermore, all kinds of data can be retrieved per movie, for example revenue in a specific year, genres, runtime, distibutor etc. The websites distribute enough data to fit the 
-research and moreover, the data can be specified in variables to make it usefull for this research. </p>
+<p> These three websites are somewhat comparable as the all show boxoffice data about movies.
+Furthermore, different kinds of data can be retrieved per movie, for example revenue in a specific year, genres, runtime, distibutor etc. The websites distribute enough data to fit the 
+research. </p>
 
 <p> Comparing the websites with each other, the website of https://www.boxofficemojo.com stands out in terms of data availability about the movies. 
 First, the data on https://www.boxofficemojo.com provides a simple overview of the top 200 movies based on revenue for a specific year. 
@@ -36,7 +36,7 @@ Concerning the IMDb data, there are several IMDb API's available. However, we de
 
 **What do the instances that comprise the dataset represent?**
 
-The instances that comprise the dataset represent film titles, year of release, IMDB ranking, corresponding revenues made in- and outside the USA and worldwide. Revenues inside the USA and revenues outside the USA will also be given in percentages of the total revenues. 
+The dataset comprises of the following instances scraped from Box Office Mojo: movie title, year of release, corresponding revenues made in- and outside the USA, and worldwide. Revenues inside the USA and revenues outside the USA will also be given in percentages of the total revenues. Additionally, movie titles and ratings are scraped from IMDb. The Box Office Mojo and IMDb data are merged together based on movie titles. 
 
 **Does the dataset contain all possible instances or is it a sample of instances from a larger set?**
 
@@ -62,7 +62,7 @@ Yes, ..............
 **Are there any errors, sources of noise, or redundancies in the
 dataset?**
 
-As Box Office Mojo does not provide any movie ID's the data from Box Office Mojo is matched with data scraped from IMDb based on movie titles. In contrast to ID-tags, movie titles are not unique. Therefore there is a possibility that movies are matched with the wrong rating. 
+As Box Office Mojo does not provide any movie ID's the data from Box Office Mojo is matched with data scraped from IMDb based on movie titles. In contrast to ID-tags, movie titles are not unique. Therefore there is a possibility that one movie can be matched with multiple movie ratings. 
 
 **Is the dataset self-contained, or does it link to or otherwise rely on
 external resources?**
@@ -79,7 +79,7 @@ The film names and the revenues are acquired directly via [Box Office Mojo World
 
 **What mechanisms were used to collect the data?**
 
-For the collection we used Jupyter Notebook running on Python. 
+For the collection we used Google Colab running on Python. 
 
 **If the dataset is a sample from a larger set, what was the sampling strategy?**
 
@@ -103,7 +103,7 @@ No ethical review processes have been conducted.
 
 **Has the dataset been used for any tasks already? If so, please provide a description.**
 
-The dataset we created based on scraping data from the box office mojo and Imdb websites  has not been used for any tasks so far. The idea is to look for the impact of Covid-19 on the movie industry. In which we want to compare the revenues of movies across years. This can be done by calculating the average revenue per year, so that we can compare year by year. Or the dataset might be specified into more de-tail, where we only compare the revenues of the top 5 movies across the years. 
+The dataset we created based on scraping data from the box office mojo and Imdb websites  has not been used for any tasks so far. The idea is to look for the impact of Covid-19 on the movie industry. In which we want to compare the revenues of movies across years. This can be done by calculating the average revenue per year, so that we can compare year by year. Or the dataset might be specified into more detail, where we only compare the revenues of the top 5 movies across the years. 
 
 **Is there a repository that links to any or all papers or systems that use the dataset? If so, please provide a link or other access point**
 
@@ -111,7 +111,7 @@ We used a repository on Github : https://github.com/Albirizzu/oDCM_team8.git
 *What (other) tasks could the dataset be used for?*
 The dataset now mainly focusses on the revenues produced per movie. This revenues will be compared over a couple of years to look for the impact of Covid-19. 
 
-However, the task can be extended to analyze the growth curve of revenues made in the movie indus-try. Whether this effect is exponential or linear over the last couple of years. 
+However, the task can be extended to analyze the growth curve of revenues made in the movie industry. Whether this effect is exponential or linear over the last couple of years. 
 
 Also, an analysis on the effect of review ratings on the revenues can be done. A linear regression based on these two variables can be done to search for a correlation. 
 
