@@ -50,9 +50,9 @@ This means that for the year 2015 until the year 2021, only movies within the to
 <li>"Movie": name of the film
 <li>"Worldwide": amount of worldwide revenue given in US$
 <li>"Domestic": amount of revenues made in the USA given in US$
-<li>"%-Domestic": percentage of revenues made in the USA 
+<li>"%-Domestic": percentage of worldwide box office revenues made in the USA 
 <li>"Foreign": amount of revenues made outside the USA given in US$
-<li>"%-Foreign": percentage of revenues made outside the USA
+<li>"%-Foreign": percentage of worldwide box office revenues made outside the USA
 <li>"Rating": IMDb user rating on a scale of 1 to 10  
 <li>"Year": release year of the movie
 </ol>
@@ -64,7 +64,7 @@ We were not able to scrape IMDb ratings for all movies in the Box Office Mojo ra
 **Are there any errors, sources of noise, or redundancies in the
 dataset?**
 
-As Box Office Mojo does not provide any movie ID's the data from Box Office Mojo is matched with data scraped from IMDb based on movie titles. In contrast to ID-tags, movie titles are not unique. Therefore there is a possibility that one movie can be matched with multiple movie ratings. 
+As Box Office Mojo does not provide any movie ID's the data from Box Office Mojo is matched with data scraped from IMDb based on movie titles. In contrast to ID-tags, movie titles are not unique. Therefore there is a possibility that one movie can be matched with multiple movie ratings. Additionally, movie ratings are subjected to bias as they only measure the opinion of people who rate movies on IMDb.
 
 **Is the dataset self-contained, or does it link to or otherwise rely on
 external resources?**
