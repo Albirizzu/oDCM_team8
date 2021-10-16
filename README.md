@@ -2,36 +2,35 @@
 ### 1.1 Motivation
 *Motivation for data context*
 
-The aim of this paper is to collect data regarding theatrical movies, to answer the following research question: *What is the impact of Covid-19 on the film industry?*
-Therefore, a dataset containing data of movies before, during and after the pandemic will be created (2015 until 2020). 
-This will be valuable to compare different kinds of variables relating to the film industry during this time period and to get some new insights on what kind of impact Covid-19 
-had, e.g. were there changes in revenues?  
-As other datasets only have data about one specific year, this dataset has been merged to one combined dataset containing data of multiple years. 
+The movie industry has taken a big hit due to the COVID-19 pandemic. During 2020 and 2021, movie theaters and cinemas have had to deal with various restrictions, such as a limited number of visitors, mandatory COVID-vaccination checks and closing down entirely.
+The aim of this repository is to collect data regarding cinematic movies, to answer the following research question: *What is the impact of Covid-19 on boxoffice revenue?*
+We will create a dataframe containing revenue data of movies before, during and after the pandemic (2015 until 2021) using Box Office Mojo. 
+This will allow us to compare boxoffice revenues of the film industry during this time period and to get some new insights on the of impact Covid-19. There are several boxoffice revenue datasets available online (on e.g. Kaggle), however they are not up-to-date and focus on US revenue only. We believe our dataset will be of added value to the research community as there are no other datasets available focussing on this specific time period in a worldwide context. 
+As a result of movie theaters closing down, many blockbusters decided to postpone their release. This might have led to a decrease in quality of the movies released during the pandamic. We will add IMDb ratings to the dataset to allow to compensate for movie quality. 
 
 *Motivation for choice website/API*
 
-The following three websites have been assessed containing relevant data, regarding the reseach question:
+The following three websites have been assessed containing relevant boxoffice data:
 <ol>
 <li>First website: https://www.boxofficemojo.com/</li>
 <li>Second website: https://www.rottentomatoes.com/top</li>
 <li>Third website: https://www.the-numbers.com/</li>
 </ol>
 <p> All three websites show available data about movies, which is the first step to make the websites comparable to each other.  
-Furthermore, all kind of data can be retrieved per movie, for example revenue in a specific year, genres, runtime, distibutor etc. The websites distribute enough data to fit the 
+Furthermore, all kinds of data can be retrieved per movie, for example revenue in a specific year, genres, runtime, distibutor etc. The websites distribute enough data to fit the 
 research and moreover, the data can be specified in variables to make it usefull for this research. </p>
 
 <p> Comparing the websites with each other, the website of https://www.boxofficemojo.com stands out in terms of data availability about the movies. 
 First, the data on https://www.boxofficemojo.com provides a simple overview of the top 200 movies based on revenue for a specific year. 
 This is in contrast with the website https://www.rottentomatoes.com/top, which only gives an overview of the title of the top 100 movies based on the number of written reviews, 
 which does not fit the research really well.
-The third website https://www.the-numbers.com, also gives an overview of movies ranked on revenue, actually not only the top 200 but every released movie in a specific year.
+The third website https://www.the-numbers.com, also gives an overview of movies ranked on revenue for every released movie in a specific year.
 However, the problem with https://www.the-numbers.com is that the revenues are based on the Domestic Theatrical Market performance (North American movie territory) only, which 
-makes the data useless for this research. 
-While this research looks for the global impact of Covid-19 on the movie industry. </p>
+makes the data useless for this research. For this research looks for the global impact of Covid-19 on the movie industry. </p>
 
 <p> Therefore, data will be scraped from https://www.boxofficemojo.com. </p> 
 
-
+Concerning the IMDb data, there are several API's available. However, we decided to use a webscraper instead, as the COVID-19 pandemic is still ongoing, it is valuable for our data to be up to date.  
 
 ### 1.2 Composition
 
