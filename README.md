@@ -47,6 +47,7 @@ This means that for the year 2015 until the year 2021, only movies within the to
 **What data does each instance consist of?**
 <ol>
 <li>"Ranking": ranking of movie in year of release based on worldwide boxoffice revenue
+  - Ranking is between 1 and 200
 <li>"Movie": name of the film
 <li>"Worldwide": amount of worldwide revenue given in US$
 <li>"US($)": amount of revenues made in the USA given in US$
@@ -110,7 +111,7 @@ We changed some of the column names as opposed to the way they are displayed on 
 
 **How are the final datafiles stuctured?**
 
-Before creating the final dataset, we ensured all variables had the correct datatype. We changed the 'Rank'-variable from an object to an integer as it is a number. When deploying the dataset as a CSV-file, we make sure to keep the column names and remove the index column.
+Before creating the final dataset, we ensured all variables had the correct datatype. We changed the 'Rank'-variable from an object to an integer as it is a number. We removed the '$'s and '%'-signs from the table and turned all other numbers into floats. When deploying the dataset as a CSV-file, we make sure to keep the column names and remove the index column.
 
 **Was the “raw” data saved in addition to the preprocessed/cleaned/labeled data? **
 
