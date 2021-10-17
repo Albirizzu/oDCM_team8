@@ -112,8 +112,7 @@ We changed some of the column names as opposed to the way they are displayed on 
 
 Before creating the final dataset, we ensured all variables had the correct datatype. We changed the 'Rank'-variable from an object to an integer as it is a number. When deploying the dataset as a CSV-file, we make sure to keep the column names and remove the index column.
 
-**Was the “raw” data saved in addition to the preprocessed/cleaned/labeled
-data? **
+**Was the “raw” data saved in addition to the preprocessed/cleaned/labeled data? **
 
 No, the labeling is done when creating the dataframe. This means that the table contains the names given by us. 
 
