@@ -77,13 +77,13 @@ The dataset relies on the [IMDB](https://www.imdb.com/?ref_=helpms_helphdr_cons)
 
 **How was the data associated with each instance acquired?**
 
-The data extraction method we used was BeautifulSoup. We did so as both websites we used are static websites. The film names and the revenues are acquired directly via [Box Office Mojo Worldwide page](https://www.boxofficemojo.com/year/world/?ref_=bo_nb_hm_tab). Here the worldwide box office revenue data is provided in a table. We use Beautiful soup to parse through the table. Each row in the table can be find in a 'tr'-tag. Each item in each row can be find in a 'td'-tag. We extract the items from the td-tags by looping through each row (tr) individually. This way we ensure the data integrity won't be compromised by missing values. We loop through different years by adding a counter to the URL equal to the years of interest. 
+The data extraction method we used was BeautifulSoup. We did so as both websites we used are static websites. The film names and the revenues are acquired directly via [Box Office Mojo Worldwide page](https://www.boxofficemojo.com/year/world/?ref_=bo_nb_hm_tab). Here the worldwide box office revenue data is provided in a table. We use Beautiful soup to parse through the table. Each row in the table can be find in a 'tr'-tag. Each item in each row can be find in a 'td'-tag. We extract the items from the td-tags by looping through each row (tr) individually. This way we ensure the data integrity won't be compromised by missing values. We loop through different years by adding a counter to the URL equal to the years of interest. Our Box Office Mojo data was obtained at 
 
-The ratings are provided via [IMDB](https://www.imdb.com/). On IMDb, feature films are presented in a list. We use soup.find_all to find the movies on this list. We then use the 'h3-' and 'strong-tag' to extract the movie title and rating respectively. To loop through all years, we must add a counter to the URL equal to the years of interest. Furthermore, we want to scrape multiple pages for each year. To do so, we use the range function. This allows us to add the pagenumber to the URL in steps of 50. 
+The ratings are provided via [IMDB](https://www.imdb.com/). On IMDb, feature films are presented in a list. We use soup.find_all to find the movies on this list. We then use the 'h3-' and 'strong-tag' to extract the movie title and rating respectively. To loop through all years, we must add a counter to the URL equal to the years of interest. Furthermore, we want to scrape multiple pages for each year. To do so, we use the range function. This allows us to add the pagenumber to the URL in steps of 50.
 
 **What mechanisms were used to collect the data?**
 
-For the collection we used Google Colab running on Python. After data collection, the dataframes are uploaded to Google drive as a CSV-file.  
+For the collection we used Google Colab running on Python. Our Box Office Mojo data was obtained at 2021-10-17 08:43:51,507. The IMDb data was obtained at 2021-10-17 09:06:16,515. After data collection, the dataframes are uploaded to Google drive as a CSV-file.  
 
 **If the dataset is a sample from a larger set, what was the sampling strategy?**
 
