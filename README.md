@@ -87,7 +87,8 @@ For the collection we used Google Colab running on Python. Our Box Office Mojo d
 
 **If the dataset is a sample from a larger set, what was the sampling strategy?**
 
-The dataset is a sample from a large set. First of all, we decide to scrape only the data from the 2015 to the present to see how covid impacts on gross revenues and merging this data with rating on IMDb website. Then we decide to take only the best 50 films for gross revenues from boxofficemojo's website. Beyond that, the sample is arbitrary.
+The data scraped from Box Office Mojo contains all the data that is available in the table we use. We therefore do not use a sample for the Box Office Mojo data.
+The data scraped from IMDb is a sample that only contains the 1500 most popular movies released each year. 
 
 **Who were involved in the data collection process?**
 
