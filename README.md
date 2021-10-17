@@ -97,9 +97,9 @@ The data collection was done by four students from Tilburg University for the cl
 
 The data was collected in a time frame that does not correspond to the time frame in which the data associated with the instances was created. We collected data for the years 2015 to 2021 and therefore most of the data was already on the website. On the other hand, some data are still updated daily, so they may still change over time (especially for those referring to the current year and 2020).
 
-**Were any ethical review processes conducted? If so, please provide a description of these review processes, including the outcomes, as well as a link or other access point to any supporting documentation.**
+**Were any ethical review processes conducted?**
 
-No ethical review processes have been conducted.
+Our data does not store any personally identifiable information. We do not foresee and legal or ethical concerns.
 
 
 
