@@ -77,7 +77,7 @@ The dataset relies on the [IMDB](https://www.imdb.com/?ref_=helpms_helphdr_cons)
 
 **How was the data associated with each instance acquired?**
 
-The film names and the revenues are acquired directly via [Box Office Mojo Worldwide page](https://www.boxofficemojo.com/year/world/?ref_=bo_nb_hm_tab). The ratings are provided via [IMDB](https://www.imdb.com/). Also the ratings were directly observable via webscraping. 
+The film names and the revenues are acquired directly via [Box Office Mojo Worldwide page](https://www.boxofficemojo.com/year/world/?ref_=bo_nb_hm_tab). The ratings are provided via [IMDB](https://www.imdb.com/). The data extraction method we used was BeautifulSoup. We did so as both websites we used are static websites.
 
 **What mechanisms were used to collect the data?**
 
