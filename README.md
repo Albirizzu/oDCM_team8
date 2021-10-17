@@ -101,6 +101,14 @@ The data was collected in a time frame that does not correspond to the time fram
 
 Our data does not store any personally identifiable information. We do not foresee and legal or ethical concerns.
 
+## 1.4.   Preprocessing
+
+**Has there been done any preprocessing after data collection?**
+We changed some of the column names as opposed to the way they are displayed on Box Office Mojo. Box Office Mojo displays US-revenue under the column name 'domestic'. We felt this was a somewhat ambiguous term and decided to change it to 'US'.
+
+**How are the final datafiles stuctured?**
+Before creating the final dataset, we ensured all variables had the correct datatype. We changed the 'Rank'-variable from an object to an integer as it is a number. When deploying the dataset as a CSV-file, we make sure to keep the column names and remove the index column.
+
 
 
 ## 1.5.		Uses
