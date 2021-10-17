@@ -88,7 +88,7 @@ For the collection we used Google Colab running on Python. Our Box Office Mojo d
 **If the dataset is a sample from a larger set, what was the sampling strategy?**
 
 The data scraped from Box Office Mojo contains all the data that is available in the table we use. We therefore do not use a sample for the Box Office Mojo data.
-The data scraped from IMDb is a sample that only contains the 1500 most popular movies released each year. 
+The data scraped from IMDb is a sample that only contains the 1500 most popular movies released each year. As there are approximately 10.000 movies available on IMDb for each year, we decided to work with a subset. We chose this number as to minimise the number of N/A whilst also minimising the chances of errors due to duplicate movie titles.
 
 **Who were involved in the data collection process?**
 
