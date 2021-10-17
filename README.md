@@ -83,7 +83,7 @@ The ratings are provided via [IMDB](https://www.imdb.com/). On IMDb, feature fil
 
 **What mechanisms were used to collect the data?**
 
-For the collection we used Google Colab running on Python. 
+For the collection we used Google Colab running on Python. After data collection, the dataframes are uploaded to Google drive as a CSV-file.  
 
 **If the dataset is a sample from a larger set, what was the sampling strategy?**
 
