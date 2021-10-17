@@ -7,6 +7,7 @@ The aim of this repository is to collect data regarding cinematic movies, to ans
 We will create a dataframe containing revenue data of movies before, during and after the pandemic (2015 until 2021) using Box Office Mojo. 
 This will allow us to compare boxoffice revenues of the film industry during this time period and to get some new insights on the of impact Covid-19. There are several boxoffice revenue datasets available online (on e.g. Kaggle), however they are not up-to-date and focus on US revenue only. We believe our dataset will be of added value to the research community as there are no other datasets available focussing on this specific time period in a worldwide context. 
 As a result of movie theaters closing down, many blockbusters decided to postpone their release. This might have led to a decrease in quality of the movies released during the pandamic. We will add IMDb ratings to the dataset to allow the research to compensate for movie quality. 
+The latter also distinguishes this dataset from others, because it contains data about revenues as well as data about rankings. Furthermore is the data as up-to-date as possible when it is being scraped, because it uses the Box Office Mojo and IMDB websites for the data collection. When updates are published on the websites, the scraper is able to provide it into a dataset. This gives researchers the ability to work with accurate data. 
 
 **Motivation for choice website/API**
 
@@ -25,8 +26,7 @@ First, the data on https://www.boxofficemojo.com provides a simple overview of t
 This is in contrast with the website https://www.rottentomatoes.com/top, which only gives an overview of the title of the top 100 movies based on the number of written reviews, 
 which does not fit the research really well.
 The third website https://www.the-numbers.com, also gives an overview of movies ranked on revenue for every released movie in a specific year.
-However, the problem with https://www.the-numbers.com is that the revenues are based on the Domestic Theatrical Market performance (North American movie territory) only, which 
-makes the data useless for this research. For this research looks for the global impact of Covid-19 on the movie industry. </p>
+However, the problem with https://www.the-numbers.com is that the revenues are based on the Domestic Theatrical Market performance (North American movie territory) only, which makes the data useless for this research. For this research looks for the global impact of Covid-19 on the movie industry. </p>
 
 <p> Therefore, data will be scraped from https://www.boxofficemojo.com. </p> 
 
@@ -49,9 +49,9 @@ This means that for the year 2015 until the year 2021, only movies within the to
 <li>"Ranking": ranking of movie in year of release based on worldwide boxoffice revenue
 <li>"Movie": name of the film
 <li>"Worldwide": amount of worldwide revenue given in US$
-<li>"Domestic": amount of revenues made in the USA given in US$
-<li>"%-Domestic": percentage of worldwide box office revenues made in the USA 
-<li>"Foreign": amount of revenues made outside the USA given in US$
+<li>"US($)": amount of revenues made in the USA given in US$
+<li>"%-US": percentage of worldwide box office revenues made in the USA 
+<li>"Foreign": amount of revenues made outside the USA given in US$ (scraped data is from US website)
 <li>"%-Foreign": percentage of worldwide box office revenues made outside the USA
 <li>"Rating": IMDb user rating on a scale of 1 to 10  
 <li>"Year": release year of the movie
@@ -111,7 +111,14 @@ We changed some of the column names as opposed to the way they are displayed on 
 
 Before creating the final dataset, we ensured all variables had the correct datatype. We changed the 'Rank'-variable from an object to an integer as it is a number. When deploying the dataset as a CSV-file, we make sure to keep the column names and remove the index column.
 
+**Was the “raw” data saved in addition to the preprocessed/cleaned/labeled
+data? **
 
+No, the labeling is done when creating the dataframe. This means that the table contains the names given by us. 
+
+**Is the software used to preprocess/clean/label the instances available?**
+
+The labeling has been done in the same source file as the scraping itself, which means that Python is being used.
 
 ## 1.5.		Uses
 
