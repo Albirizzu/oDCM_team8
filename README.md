@@ -47,15 +47,28 @@ This means that for the year 2015 until the year 2021, only movies within the to
 **What data does each instance consist of?**
 <ol>
 <li>"Ranking": ranking of movie in year of release based on worldwide boxoffice revenue
+  
   - Ranking is between 1 and 200
 <li>"Movie": name of the film
+  
+  - Dataset consists of 1400 movies
 <li>"Worldwide": amount of worldwide revenue given in US$
+  
+  - The mean worldwide revenue over all years is $134.400.000 
 <li>"US($)": amount of revenues made in the USA given in US$
+  
+  - The mean US revenue over all years is $62.084.496
 <li>"%-US": percentage of worldwide box office revenues made in the USA 
 <li>"Foreign": amount of revenues made outside the USA given in US$ (scraped data is from US website)
+  
+  - The mean foreign revenue over all years is $93.800.000 
 <li>"%-Foreign": percentage of worldwide box office revenues made outside the USA
-<li>"Rating": IMDb user rating on a scale of 1 to 10  
+<li>"Rating": IMDb user rating on a scale of 1 to 10
+  
+  - The mean IMDb rating is 5.833
 <li>"Year": release year of the movie
+  
+  - This dataset contains movies released between 2015 and 2021
 </ol>
 
 **Is any information missing from individual instances?**
